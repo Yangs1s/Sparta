@@ -22,9 +22,9 @@ jobs:
           echo "${HOME}/.poetry/bin" >> $GITHUB_PATH
 
       - name: Install dependencies
-      run: |
-        ${HOME}/.poetry/bin/poetry install
+        run: |
+          ${HOME}/.poetry/bin/poetry install
       
-        - name: Test python project
-      run: |
-        poetry run python manage.py test
+      - name: Test python project
+        run: |
+          poetry run python manage.py test
